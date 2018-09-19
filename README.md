@@ -11,4 +11,5 @@ the one thing I had trouble with was trying to make the graph and circle section
 
 
 
+
 <img width="562" alt="screen shot 2018-09-19 at 7 31 56 am" src="https://user-images.githubusercontent.com/40470660/45756671-b2b2db80-bbde-11e8-9f6c-a7266083ac80.png">
