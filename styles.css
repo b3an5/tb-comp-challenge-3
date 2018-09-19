@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  grid-template-areas: 
+    "lNav main"
+}
+
+.left-nav {
+  background-color: #374050;
+  grid-area: lNav;
+  color: #7E8797;
+  width: 185px;
+}
+
+.left-nav img {
+  border-radius: 50%;
+  width: 100px;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.main,
+.admin,
+.catagories {
+  border-bottom: 1px solid black;
+  margin: 20px; 
+}
+
+.name {
+  margin-left: 25%;
+}
+
+.left-nav h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: .8em;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.left-nav h3:hover {
+  background-color: #313948;
+  color: white;
+  border-left: 1px solid lightblue;
+}
+
+.left-nav h4 {
+  font-size: .77em;
+}
+
+.left-nav i {
+  margin-right: 10px;
+}
+
+.fa-map-marker:before,
+.fa-code-branch:before {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fa-file-alt:before,
+.fa-clipboard-list:before {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.fa-book:before,
+.fa-share-alt:before {
+  margin-right: 8px;
+}
+
+.right-side {
+  background-color: #fff;
+  grid-area: main;
+  width: 100%;
+  color: #939395;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 5fr 11fr;
+  grid-template-areas: 
+    "nav"
+    "job"
+    "graph"
+    "info";
+}
+
+.content-nav {
+  grid-area: nav;
+  width: 100%;
+  display: flex;
+}
+
+.nav-c {
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.nav-c:hover {
+  background-color: #48a3f3;
+  color: white;
+}
+
+.media-q {
+  display: none;
+}
+
+.nav-icon {
+  margin: 5px; 
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.search-input {
+  width: 95%;
+  border: none;
+  height: 50px;
+}
+
+::placeholder {
+  color: rgb(187 193 201);
+  font-size: 1.5em;
+}
+
+.job-title {
+  grid-area: job;
+  margin-top: 30px;
+  margin-left: 50px;
+  /*display: flex;*/
+}
+
+.job-title h4 {
+  margin-top: 10px;
+}
+
+.title-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -40px;
+  margin-right: 30px;
+}
+
+.title-buttons h5 {
+  border: 1px solid grey; 
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.fa-circle:before {
+    color: green;
+}
+
+.preview {
+  color: #9CD3F1;
+}
+
+.title-nav {
+  display: flex;
+  flex-direction: row;
+  font-size: .77em;
+  /*align-content: flex-end;*/
+  align-items: flex-end;
+  padding-top: 30px;
+}
+
+.title-nav h3 {
+  display: flex;
+  margin-right: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+}
+
+.title-nav h3:hover {
+  border-bottom: 2px solid blue;
+  padding-bottom: 20px;
+}
+
+
+article {
+  background-color: #EEF2F6;
+  grid-area: graph;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  justify-content: center;
+}
+
+.circles {
+  margin-top: 25px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.graph {
+  /*margin-right: 40px;*/
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.graph button {
+  border-radius: 40px;
+  margin-left: 130px;
+  width: 150px;
+  height: 25px;
+  margin-top: 20px;
+}
+
+.circle-svg {
+  transform: rotate(90deg);
+  /*position: relative;*/
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.overlay-div {
+  position: relative;
+}
+
+.actual-graph {
+  fill: none;
+  stroke-width: 12px;
+  stroke: lightgrey;
+}
+
+.circle-1 {
+  fill: none;
+  stroke-width: 12px;
+  stroke: #66B4C0;
+  stroke-linecap: round;
+  stroke-dasharray: calc(3.14*140);
+  stroke-dashoffset: calc(3.14*140*.25);
+}
+
+.circle-2 {
+  fill: none;
+  stroke-width: 12px;
+  stroke: #48A4F5;
+  stroke-linecap: round;
+  stroke-dasharray: calc(3.14*140);
+  stroke-dashoffset: calc(3.14*140*.50);
+}
+
+.circle-3 {
+  fill: none;
+  stroke-width: 12px;
+  stroke: #A66FAE;
+  stroke-linecap: round;
+  stroke-dasharray: calc(3.14*140);
+  stroke-dashoffset: calc(3.14*140*.80);
+}
+
+.circle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+}
+
+.circles button {
+  border-radius: 40px;
+  margin-left: 162px;
+  width: 150px;
+  margin-top: 15px;
+  height: 25px;
+}
+
+main {
+  background-color: #EEF2F6;
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+  "description social";
+}
+
+.discription {
+  grid-area: description;
+}
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.edit-button {
+  background-color: #7E8BA3;
+  border: none;
+  width: 60px;
+  height: 27px;
+  color: white;
+}
+
+.table-head {
+  background-color: #717E93;
+  height: 10px;
+  color: white;
+}
+
+td {
+  padding-top: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.table-left {
+  width: 30%;
+  padding-left: 10px;
+  font-size: .78em;
+  font-weight: 800;
+}
+
+.table-right {
+  padding-right: 10px;
+}
+
+.tom-td {
+  display: flex;
+}
+
+.tom-tizzy {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.tom {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.social {
+  grid-area: social;
+  margin-left: -30px;
+  width: 98%;
+  margin-top: 30px;
+}
+
+.ic {
+  margin-top: 10px;
+  height: 40px;
+}
+
+.ic h3 {
+  padding-top: 7px;
+}
+
+.button-text {
+  text-align: center;
+}
+
+.facebook {
+  background-color: #506FBD;
+  color: white;
+}
+
+.social-icons {
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+.s-icon {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.twit {
+  padding-right: 13px;
+}
+
+.twitter {
+  background-color: #47A8E9;
+  color: white;
+}
+ 
+.linkedin {
+  background-color: #3580B7;
+  color: white;
+}
+
+.linkd {
+  padding-right: 15px;
+}
+
+.social-text {
+  margin-top: 20px; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.social-text-header {
+  color: #757C86;
+  padding-bottom: 5px;
+}
+
+.social-input {
+  background-color: white;
+  width: 75%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.social-button {
+  width: 20%;
+  background-color: #65B7C0;
+  height: 28px;
+  color: white;
+}
+
+.link-to-job {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .left-nav {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+
+  body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  grid-template-areas: 
+    "main"
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+article {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+    }
+
+  .graph {
+    margin-left: 0;
+    }
+  
+  .graph button {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+
+main {
+  display: block;
+}
+
+.ic {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.social {
+  margin-left: 5%;
+  width: 95%;
+}
+
+.title-nav {
+  font-size: .6em;
+}
+
+article {
+  margin-top: -141px;
+}
+
+.nav-c {
+  height: 50px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .title-nav {
+    display: none;
+  }
+
+  .media-q {
+    display: inline-block;
+  }
+
+  .preview {
+    display: none;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .search-input {
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 627px) {
+  .search-input {
+    display: none;
+  }
+
+  .search-bar {
+    width: 100%
+  }
+
+  .nav-c {
+    width: 100%
+  }
+
+  .circles, .graph {
+    display: none;
+  }
+
+  article {
+    height: 0;
+  }
+
+  .ic {
+    width: 70%;
+    margin-left: 16%;
+  }
+
+  .right-side {
+  background-color: #fff;
+  grid-area: main;
+  width: 100%;
+  color: #939395;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 11fr;
+  grid-template-areas: 
+    "nav"
+    "job"
+    "info";
+}
+
+  main {
+    margin-top: -138px;
+  }
+
+  .title-buttons {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -138px;
+    margin-right: 10px;
+  }
+
+  table {
+    margin-left: 20px;
+  }
+}
+
+
+
+
+
+
+

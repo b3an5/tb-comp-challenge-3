@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>comp 3</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav class="left-nav">
+    <div class="profile">
+      <img src="./pics/TheoBean-F.jpg">
+      <h3 class="name">Theo Bean <i class="fas fa-angle-down"></i></h3>
+    </div>
+    <div class="main">
+      <h4 class="nav-heading">main</h4>
+      <h3><i class="fas fa-home"></i> HOME</h3>
+      <h3><i class="fas fa-briefcase"></i> JOBS</h3>
+      <h3> <i class="fas fa-file-alt"></i> RESUMES</h3>
+      <h3> <i class="fas fa-clipboard-list"></i> TASKS</h3>
+      <h3><i class="fas fa-calendar"></i> CALENDAR</h3>
+    </div> 
+    <div class="admin">
+      <h4 class="nav-heading">Admin</h4>
+      <h3><i class="fas fa-users"></i> USERS</h3>
+      <h3><i class="fas fa-map-marker"></i> LOCATIONS</h3>
+      <h3><i class="fas fa-code-branch"></i> WORKFLOW</h3>
+      <h3><i class="fas fa-book"></i> JOB BOARDS</h3>
+      <h3><i class="fas fa-share-alt"></i> SOCIAL</h3>
+    </div> 
+    <div class="catagories">
+      <h4 class="nav-heading">Catagories</h4>
+      <h3><i class="far fa-square"></i> Administdative</h3>
+      <h3><i class="far fa-square"></i> Design</h3>
+      <h3><i class="far fa-square"></i> Exectutive</h3>
+      <h3><i class="far fa-square"></i> Human Resources</h3>
+    </div>
+  </nav>
+  <section class="right-side content">
+    <nav class="content-nav">
+      <div class="hamburger nav-c"><i class="fas fa-bars nav-icon"></i></div>
+      <div class="nav-c search-bar">
+        <i class="fas fa-search nav-icon"></i> <input type="text" class="search-input" placeholder="search for a job task or resume">
+      </div>
+      <div class="nav-c">
+        <i class="fas fa-user-plus nav-icon"></i>
+      </div>
+      <div class="nav-c">
+        <i class="far fa-calendar-plus nav-icon"></i>
+      </div>
+      <div class="nav-c">
+        <i class="fas fa-th nav-icon"></i>
+      </div>
+    </nav>
+    <header class="job-title">
+      <h2>Front End Engineer</h2>
+      <h4><i class="fas fa-map-marker"></i> Denver, CO • <span class="preview">Preview this post</span></h4>
+      <div class="title-buttons">
+        <h5 class="open"><i class="fas fa-circle"></i> open</h5><h5><i class="fas fa-bookmark"></i></h5><h5><i class="fas fa-pen"></i></h5><h5><i class="far fa-trash-alt"></i></h5>
+      </div>
+      <h4 class="media-q"><i class="fas fa-caret-left"></i> Summary <i class="fas fa-caret-right"></i></h4>
+      <div class="title-nav">
+        <h3>SUMMARY</h3> 
+        <h3>APPLICANTS</h3>
+        <h3>JOB BOARD</h3>
+        <h3>INTERVIEWS</h3>
+        <h3>ACTIVITY</h3>
+        <h3>BROADCAST</h3>
+        <h3>NOTIFICATIONS</h3>
+      </div>
+    </header>
+    <article>
+      <div class="circles">
+        <div class="circle-container">
+          <div class="overlay-div">
+            <div class="circle-text">
+              <h2 class="circle-num"> 3,785</h2>
+              <h5 class="circle-des">applicants</h5>
+            </div>
+            <svg class="circle-svg" height="160" width="160">
+              <circle class="actual-graph" r="70" cx="80" cy="80"/><circle class="overlay-graph circle-1" r="70" cx="80" cy="80"/>
+            </svg>
+          </div>
+          <div class="overlay-div">
+            <div class="circle-text">
+              <h2 class="circle-num"> 1,784</h2>
+              <h5 class="circle-des">interviews</h5>
+            </div>
+            <svg class="circle-svg" height="160" width="160">
+              <circle class="actual-graph" r="70" cx="80" cy="80"/><circle class="overlay-graph circle-2" r="70" cx="80" cy="80"/>
+            </svg>
+          </div>
+          <div class="overlay-div">
+            <div class="circle-text">
+              <h2 class="circle-num">987</h2>
+              <h5 class="circle-des">forwards</h5>
+            </div>
+            <svg class="circle-svg" height="160" width="160">
+              <circle class="actual-graph" r="70" cx="80" cy="80"/><circle class="overlay-graph circle-3" r="70" cx="80" cy="80"/>
+            </svg>
+          </div>
+        </div>
+        <!-- <img src="./pics/circles.png" class="circles-pic"> -->
+        <button>TOTALS</button>
+      </div>
+      <div class="graph">
+        <img src="./pics/graph.png" class="graph-pic">
+        <button>APPLICANTS/DAY</button>
+      </div>
+    </article>
+    <main>
+      <div class="discription">
+        <table>
+          <tr class="table-head">
+            <td class="table-left">JOB DESCRIPTION</td>
+            <td class="table-right"><BUTTON class="edit-button"><i class="fas fa-pen"></i> EDIT</BUTTON></td>
+          </tr>
+          <tr>
+            <td class="table-left">POSITION TITLE</td>
+            <td class="table-right">Font End Engineer</td>
+          </tr>
+          <tr>
+            <td class="table-left">LOCATION</td>
+            <td class="table-right">Denver, CO</td>
+          </tr>
+          <tr>
+            <td class="table-left">EMPLOYMENT TYPE</td>
+            <td class="table-right">Full-time</td>
+          </tr>
+          <tr>
+            <td class="table-left">EXPERIENCE</td>
+            <td class="table-right">Mid-level</td>
+          </tr>
+          <tr>
+            <td class="table-left">STATUS</td>
+            <td class="table-right">Open</td>
+          </tr>
+          <tr>
+            <td class="table-left">DESCRIPTION</td>
+            <td class="table-right">Front End Engineers are responsible for the creation and up keep of the custumers main point of contact with the company. It is imparative that you enjoy spagetti with meatballs as opposed to meatsauce and drink a minimum of 12 cups of coffee per day.</td>
+          </tr>
+          <tr>
+            <td class="table-left">HIRING LEAD</td>
+            <td class="table-right tom-td"><img class="tom-tizzy" src="./pics/tom-tizzy.jpg"> <span class="tom">Tom Tizzy</span></td>
+          </tr>
+          <tr>
+            <td class="table-left">APPROVED SALARY</td>
+            <td class="table-right">$500,000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="social">
+        <div class="social-icons">
+          <div class="facebook ic">
+            <h3><i class="fab fa-facebook-f s-icon"></i><span class="button-text">Post to Facebook</span></h3>
+          </div>
+          <div class="twitter ic">
+            <h3><i class="fab fa-twitter twit s-icon"></i><span class="button-text">Tweet this Job</span></h3>
+          </div>
+          <div class="linkedin ic">
+            <h3><i class="fab fa-linkedin-in s-icon linkd"></i><span class="button-text">Post to Linkedin</span></h3>
+          </div>
+        </div>
+        <div class="link-to-job social-text">
+          <h3 class="social-text-header"><i class="fas fa-globe-americas"></i> Link to this Job</h3>
+          <h6>Lorem ipsum dolor sit amet, hinc dolore soluta et nam. Vix perfecto ullamcorper et, pro ad honestatis.</h6>
+          <input type="text" class="social-input" placeholder="Lorem ipsum dolor sit amet, hinc dolore soluta et nam"><button class="social-button">copy</button>
+        </div> 
+        <div class="widget social-text">
+          <h3 class="social-text-header"><i class="fas fa-save"></i> Use the Button Widgit</h3>
+          <h6>Lorem ipsum dolor sit amet, hinc dolore soluta et nam.</h6>
+          <input type="text" class="social-input" placeholder="Lorem ipsum dolor sit amet, hinc dolore soluta et nam"><button class="social-button">copy</button>
+        </div> 
+        <div class="link-to-job social-text">
+          <h3 class="social-text-header"><i class="fas fa-paper-plane"></i> Upload Resume by Email</h3>
+          <h6>Lorem ipsum dolor sit amet, hinc dolore soluta et nam. Vix perfecto ullamcorper et, pro ad honestatis.</h6>
+          <input type="text" class="social-input" placeholder="Lorem ipsum dolor sit amet, hinc dolore soluta et nam"><button class="social-button">copy</button>
+        </div>
+      </div>  
+    </main>
+  </section>
+</body>
+</html>
