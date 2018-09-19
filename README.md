@@ -7,7 +7,7 @@ the one thing I had trouble with was trying to make the graph and circle section
 
 <img width="1209" alt="screen shot 2018-09-19 at 7 34 37 am" src="https://user-images.githubusercontent.com/40470660/45756616-8c8d3b80-bbde-11e8-9ca7-652f997932ba.png">
 
-<img width="1211" alt="screen shot 2018-09-19 at 7 35 45 am" src="https://user-images.githubusercontent.com/40470660/45756653-a9297380-bbde-11e8-8633-9ae324d6b4ca.png">
+<img width="1213" alt="screen shot 2018-09-19 at 7 48 18 am" src="https://user-images.githubusercontent.com/40470660/45757388-754f4d80-bbe0-11e8-9f1b-e30163c7796a.png">
 
 
 
