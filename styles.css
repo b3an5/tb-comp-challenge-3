@@ -78,6 +78,22 @@ body {
   margin-right: 8px;
 }
 
+.yellow {
+  color: #FFDB49;
+}
+
+.blue {
+  color: #53AEF8;
+}
+
+.red{
+  color: #D63762;
+}
+
+.green {
+  color: #4AA78B;
+}
+
 .right-side {
   background-color: #fff;
   grid-area: main;
